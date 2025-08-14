@@ -15,7 +15,8 @@
     "start": "node ./build/index.js",
     "link-global": "bun link",
     "unlink-global": "bun unlink",
-    "dev:up": "bun link && bun run build"
+    "dev:up": "bun link && bun run build",
+    "vercel-build": "echo 'No build needed, Vercel handles TS compilation'"
   },
   "type": "module",
   "dependencies": {
