@@ -16,7 +16,7 @@
     "link-global": "bun link",
     "unlink-global": "bun unlink",
     "dev:up": "bun link && bun run build",
-    "vercel-build": "echo 'No build needed, Vercel handles TS compilation'"
+    "vercel-build": "bun build src/index.ts --outdir ./build --target node"
   },
   "type": "module",
   "dependencies": {
