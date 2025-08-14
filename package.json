@@ -1,0 +1,24 @@
+{
+  "name": "bakery_service",
+  "module": "index.ts",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir ./build --target node",
+    "start": "node ./build/index.js",
+    "link-global": "bun link",
+    "unlink-global": "bun unlink",
+    "dev:up": "bun link && bun run build"
+  },
+  "type": "module",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
