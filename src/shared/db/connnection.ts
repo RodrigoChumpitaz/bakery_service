@@ -1,4 +1,5 @@
 import { connect } from "mongoose";
+import 'dotenv/config';
 
 export class DatabaseConnection {
     static async default(){
