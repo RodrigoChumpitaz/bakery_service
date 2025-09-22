@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { RecipeController } from "src/controllers";
+import { RecipeController } from "../controllers";
 
 class RecipeRoutes {
     route: Router

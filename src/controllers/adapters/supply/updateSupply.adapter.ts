@@ -2,7 +2,7 @@ import { IAdapter } from "../../../shared";
 import { err, ok, Result } from "neverthrow";
 import { UnexpectedError } from "inel_auth_library";
 import { ISupplyProps } from "../../../domain";
-import { supplyRepository, SupplyRepository } from "src/repositories";
+import { supplyRepository, SupplyRepository } from "../../../repositories";
 
 export class UpdateSupplyNotFoundError extends Error {
     constructor(message: string) {

@@ -1,4 +1,4 @@
-import { ISupplyDb } from 'src/shared';
+import { ISupplyDb } from '../shared';
 
 export interface SupplyResult {
     id: string;

@@ -7,14 +7,13 @@
     "@types/express": "^5.0.3",
     "@types/morgan": "^1.9.10"
   },
-  "type": "module",
   "peerDependencies": {
     "typescript": "^5"
   },
   "private": true,
   "scripts": {
     "dev": "bun run --watch src/index.ts",
-    "build": "bun build src/index.ts --outdir ./build --target node",
+    "build": "bun run tsc",
     "start": "node ./build/index.js",
     "dev:up": "bun link && bun run build",
     "vercel-build": "echo 'Building for Vercel...'"
