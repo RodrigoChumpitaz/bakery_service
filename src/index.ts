@@ -1,14 +1,11 @@
-import express from 'express';
+import app from "./app"
+import { seedDatabase } from "./seeders";
+import { DatabaseConnection } from "./shared";
 
-const app = express();
-
-app.get('/', (req, res) => {
-    res.send('Welcome to the Bakery Service API!');
-});
-
-app.listen(process.env.PORT || 3000, () => {
-    console.log('Server is running on http://localhost:3000');
-});
-
-// Export para Vercel
-export default app;
+(async () => {
+    app.listen(Bun.env.PORT, () => {
+        console.log(`Server is running on http://localhost:${Bun.env.PORT}`);
+    });
+    await DatabaseConnection.default();
+    await seedDatabase();
+})();
