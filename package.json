@@ -7,6 +7,7 @@
     "@types/express": "^5.0.3",
     "@types/morgan": "^1.9.10"
   },
+  "type": "module",
   "peerDependencies": {
     "typescript": "^5"
   },
@@ -20,6 +21,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "inel_auth_library": "^1.2.3",
     "mongoose": "^8.17.1",
